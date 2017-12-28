@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*顶部通栏*/
+.wjs_topBar {
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+  color: #666;
+}
+.wjs_topBar a {
+  color: #666;
+}
+.wjs_topBar a:hover {
+  color: #666;
+  text-decoration: none;
+}
+.wjs_topBar > .container > .row > div {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.wjs_topBar > .container > .row > div + div {
+  border-left: 1px solid #ccc;
+}

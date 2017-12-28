@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*==========rest css===========*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif;
+  color: #333;
+}
+ul{
+  list-style: none;
+}
+a{
+  color: #333;
+  text-decoration: none;
+}
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="pasword"]
+,textarea{
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+/*==========common css===========*/
+.f_left{
+  float: left;
+}
+.f_right{
+  float: right;
+}
+.clearfix::before,
+.clearfix::after{
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.ml10{
+  margin-left:10px;
+}
+.mr10{
+  margin-right:10px;
+}
+.mt10{
+  margin-top:10px;
+}
+.mb10{
+  margin-bottom:10px;
+}
+
+/*版心*/
+.sn_layout{
+  width: 100%;
+  max-width: @psdWidth;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 90rem/@baseSize;
+}

@@ -1,0 +1,71 @@
+@charset "utf-8";
+/*导入变量*/
+/*这种注释 会编译到css文件*/
+/*1.变量*/
+a:hover {
+  color: #e92322;
+}
+.box {
+  border: 3px solid #e92322;
+}
+.box_xyy {
+  color: #e92322;
+}
+.box_xyy a {
+  color: #e92322;
+}
+/*导入函数*/
+/* mixin 混合 混入 */
+/*类class混入*/
+/*组合样式*/
+/*函数混入*/
+/*需求：左浮动下边框 在html 调用类 f_left b_bottom */
+.f_left_b_bottom {
+  float: right;
+  border-bottom: 3px solid #ccc;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+/*导入需要的模块*/
+/*顶部通栏*/
+/*顶部通栏*/
+.wjs_topBar {
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+  color: #666;
+}
+.wjs_topBar a {
+  color: #666;
+}
+.wjs_topBar a:hover {
+  color: #e92322;
+  text-decoration: none;
+}
+.wjs_topBar > .container > .row > div {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.wjs_topBar > .container > .row > div + div {
+  border-left: 1px solid #ccc;
+}
+/*顶部导航*/
+/*导航模块*/
+/*如果你有更多模块需要依赖 导入即可*/
+/*内置函数&运算*/
+#box {
+  width: 100%;
+  /*比红色亮10%*/
+  color: #ff3333;
+  /*假设7张图片 轮播图*/
+}
+#box ul {
+  width: 900%;
+}
+#box ul li {
+  float: left;
+  width: 11.11111111%;
+}

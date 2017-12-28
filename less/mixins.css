@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* mixin 混合 混入 */
+/*类class混入*/
+/*组合样式*/
+/*函数混入*/
+/*需求：左浮动下边框 在html 调用类 f_left b_bottom */
+.f_left_b_bottom {
+  float: right;
+  border-bottom: 3px solid #ccc;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}

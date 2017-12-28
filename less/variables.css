@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*这种注释 会编译到css文件*/
+/*1.变量*/
+a:hover {
+  color: #e92322;
+}
+.box {
+  border: 3px solid #e92322;
+}
+.box_xyy {
+  color: #e92322;
+}
+.box_xyy a {
+  color: #e92322;
+}

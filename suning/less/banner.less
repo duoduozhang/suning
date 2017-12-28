@@ -1,0 +1,41 @@
+@charset "utf-8";
+.sn_banner{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  ul{
+    &:first-child{
+      width: 10*100%;
+      transform: translateX(-100%/10);
+      -webkit-transform: translateX(-100%/10);
+      li{
+        width: 100%/10;
+        float: left;
+        a{
+          display: block;
+          width: 100%;
+          img{
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+    &:last-child{
+      position: absolute;
+      right: 20rem/@baseSize;
+      bottom: 20rem/@baseSize;
+      li{
+        width: 12rem/@baseSize;
+        height: 12rem/@baseSize;
+        border-radius: 50%;
+        float: left;
+        margin-left:12rem/@baseSize;
+        background: #fff;
+        &.now{
+          background: @snColor;
+        }
+      }
+    }
+  }
+}

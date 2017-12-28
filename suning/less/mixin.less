@@ -1,0 +1,25 @@
+@charset "utf-8";
+// == adapter mixin
+// 根据设备  得到媒体查询的适配代码
+//.adapter(@width:320px) {
+//  @media (min-width: @width) {
+//    html {
+//      font-size: @width / @psdWidth * @baseSize;
+//    }
+//}
+// less 没有循环语句  但是可以使用递归 when 当 @index 是序号
+.adapter(@index) when (@index <= @len) {
+  // 取设备列表当中的和当前@index对应的宽度
+  @media (min-width: extract(@deviceWidth, @index)) {
+    html {
+      font-size: extract(@deviceWidth, @index) / @psdWidth * @baseSize;
+    }
+  }
+  .adapter(@index + 1);
+}
+
+//=== px2rem  px to rem 无效函数定义
+/*
+.px2rem(@size:100rem){
+   @size/@baseSize;
+}*/

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*这种注释 会编译到css文件*/
+//这种注释 less支持 css不支持 不会编译到css文件
+
+/*1.变量*/
+//1.1 变量的申明 $name = 'xyy';
+// 注意：必须以@申明，不能以数字开头，不能保护特殊字符，大小写区分
+@name:xyy;
+@mainColor:#e92322;
+//1.2 变量的使用
+a:hover{
+  color: @mainColor;
+}
+.box{
+  border: 3px solid @mainColor;
+}
+// box  数据 xyy 模块
+// 变量要拼接  @{变量名}
+.box_@{name}{
+  color: @mainColor;
+}
+.box_@{name} a{
+  color: @mainColor;
+}

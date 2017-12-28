@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*顶部通栏*/
+.wjs_topBar{
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+  color: #666;
+  a{
+    color: #666;
+    //连接符
+    &:hover{
+      color: @mainColor;
+      text-decoration: none;
+    }
+  }
+  > .container{
+    > .row{
+      > div{
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        + div{
+          border-left: 1px solid #ccc;
+        }
+      }
+    }
+  }
+}

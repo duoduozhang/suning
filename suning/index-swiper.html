@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>苏宁-38</title>
+    <!-- 预览less的功能只在开发阶段使用  替换成css -->
+    <!--<link rel="stylesheet" href="less/index.less" type="text/less">
+    <script src="assets/less/less.min.js"></script>-->
+    <link rel="stylesheet" href="assets/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="less/index.css">
+    <style>
+        .swiper-container img{
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<!--版心-->
+<div class="sn_layout">
+    <!--顶部通栏-->
+    <header class="sn_topBar">
+        <a href="#" class="icon_category"></a>
+        <form action="#">
+            <span class="icon_search"></span>
+            <input type="text" placeholder="60寸电视免费拿">
+        </form>
+        <a href="#" class="icon_cart"></a>
+    </header>
+    <!--轮播图-->
+    <div class="swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="#"><img src="images/banner01.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner02.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner03.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner04.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner05.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner06.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner07.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner08.jpg" alt=""></a></li>
+        </ul>
+        <ul class="swiper-pagination"></ul>
+    </div>
+    <!--导航-->
+    <nav class="sn_nav"></nav>
+    <!--底部页签-->
+    <footer class="sn_tabs"></footer>
+</div>
+<script src="assets/swiper/js/swiper.min.js"></script>
+<script>
+    window.onload = function () {
+        new Swiper('.swiper-container',{
+            /*1.自动轮播图*/
+            autoplay:1000,
+            autoplayDisableOnInteraction:false,
+            /*2.循环轮播图*/
+            loop:true,
+            /*3.需要指示器*/
+            pagination:'.swiper-pagination'
+        });
+    }
+</script>
+</body>
+</html>

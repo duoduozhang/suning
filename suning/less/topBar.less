@@ -1,0 +1,46 @@
+@charset "utf-8";
+.sn_topBar{
+  width: 100%;
+  height: 90rem/@baseSize;
+  background: @snColor;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  > a{
+    width: 90rem/@baseSize;
+    height: 90rem/@baseSize;
+    position: absolute;
+    top: 0;
+    &.icon_category{
+      left: 0;
+      background: url("../images/icon_category.png") no-repeat center / 44rem/@baseSize 77rem/@baseSize;
+    }
+    &.icon_cart{
+      right: 0;
+      background: url("../images/icon_cart.png") no-repeat center / 63rem/@baseSize 68rem/@baseSize ;
+    }
+  }
+  > form{
+    width: 100%;
+    padding: 0 90rem/@baseSize;
+    position: relative;
+    > input{
+      width: 100%;
+      height: 60rem/@baseSize;
+      background: rgba(255,255,255,0.3);
+      margin-top:15rem/@baseSize;
+      border-radius: 4rem/@baseSize;
+      font-size: 24rem/@baseSize;
+      padding-left:50rem/@baseSize;
+    }
+    > .icon_search{
+      width: 30rem/@baseSize;
+      height: 30rem/@baseSize;
+      position: absolute;
+      left: 100rem/@baseSize;
+      top: 30rem/@baseSize;
+      background: url("../images/icon_search.png") no-repeat center / 27rem/@baseSize 28rem/@baseSize;
+    }
+  }
+}

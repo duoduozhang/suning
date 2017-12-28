@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*导入变量*/
+@import "variables";
+/*导入函数*/
+@import "mixins";
+/*导入需要的模块*/
+/*顶部通栏*/
+@import "topBar";
+/*顶部导航*/
+@import "nav";
+/*如果你有更多模块需要依赖 导入即可*/
+
+/*内置函数&运算*/
+@num:9;
+#box{
+  width: 100%;
+  /*比红色亮10%*/
+  color: lighten(red,10%);
+  /*假设7张图片 轮播图*/
+  ul{
+    width: @num * 100%;
+    li{
+      float: left;
+      width: 100% / @num;
+    }
+  }
+}

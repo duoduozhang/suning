@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 10px"><!--默认字体大小 浏览器默认16px-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font-size: 50px;
+            line-height: 1;/*一倍字体大小的行高*/
+        }
+        /*em:相对单位 相对于父元素字体大小  1em = 父元素字体大小 */
+        .em{
+            font-size: 2em;
+        }
+        /*rem:相对单位 root+em ==> rem  相对于根元素字体大小  1rem= html元素字体大小*/
+        .rem{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class=em>AAA</div>
+    <div class=rem>AAA</div>
+</body>
+</html>
